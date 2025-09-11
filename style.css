@@ -1,0 +1,54 @@
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    /* background : black; */
+    /* text: white; */
+    font: 100%/1.5 system-ui;
+    /*width: max-content;*/
+    max-width: 100ch;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+   }
+
+.fit-picture {
+    width: 250px;
+}
+
+.nav-bar {
+    /*display: inline-block;*/
+    display: flex;
+}
+
+
+.nav-bar  ol {
+    list-style-type: none;
+    padding-left: 0;
+    li{
+        display: contents;
+    };
+}
+
+.crumb{
+    display: inline-block;
+}
+.nav-bar ul {
+    list-style-type: none;
+    li{
+        display: contents;
+    };
+
+}
+
+.nav-bar a::after {
+    display: inline-block;
+    color: black;
+    content: ">";
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+  }
+
+.Title {
+    /* font : 100%/1 system-ui; */
+    
+}
