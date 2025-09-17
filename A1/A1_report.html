@@ -116,7 +116,7 @@
 				In this visualization, we explore the distribution of overdose cases across each documented race and across each age group.
 				As we can observe white people are highly represented which aligns with the overall
 				<em><a style="color: blue" href="https://alleghenycontroller.com/data-dashboards/population-change-in-allegheny-county-2010-2020/" target="_blank"> distribution of races</a> </em>
-				within the county. The second highly represented racial group are black people, making up a decently size chunk of the pie chart.
+				within the county (See <a style="color: blue" href="https://data.census.gov/table/DECENNIALPL2020.P2?q=Allegheny+County,+Pennsylvania&t=Race+and+Ethnicity" target="_blank"> 2020 census</a>). The second highly represented racial group are black people, making up a decently size chunk of the pie chart.
 				The remaining races make up a much smaller combined percentage of the total cases.
 				It should be pointed out that the distributions of each age group fluctuates.
 			</figcaption>
@@ -124,67 +124,91 @@
 
 		<figure>
 			<img src="viz/viz5.svg" alt="" />
+			<img src="viz/2016.svg" alt="" />
 			<figcaption>
 				This along with the following visualizations explore the distribution of cases across the years and months.
 				This visualization shows the trend of cases from the earliest documented one in 2007 to the latest one in 2025.
 				An interesting thing to observe is the variations in the rate of change between each year. The rate steadily increases from 2007 to 2015 before
-				drastically spiking from 2015-2017.
+				drastically spiking from 2015-2017. It then drops dramatically in 2018, and steadily increasing from 2019 to 2021. Finally, we can observe an exponential decrease from 2022 till 2025.
+				There are quite a few interesting sections to discuss and needing further research. Note that the current numbers for 2025 are not necessarily the most accurate since the current year (2025) has not ended yet.
 			</figcaption>
 		</figure>
 
 		<figure>
 			<img src="viz/viz4.svg" alt="" />
+<!--			<img src="viz/nocolour.svg" alt="" />-->
 			<figcaption>
-				In the visualization shown above, there are multiple things to take in . The first one
+				In the visualization shown above, there are multiple things to take in. The first one is that we  are
+				still exploring the distribution of accidental fatal overdoses across the year, however we have added a new  dimension
+				of detail with the age scale. Now this visualization compares how the number of cases have evolved for each age group across the years.
+				As we can observe, we still see  the same trends noted previously, such as the spike from 2015-2017 and the majority of cases spanning across
+				ages 30-60.
 			</figcaption>
 		</figure>
 
-		<figure>
-			<img src="viz/viz6.svg" alt="" />
-			<figcaption>
-				ENTER IMAGE CAPTION HERE.
-			</figcaption>
-		</figure>
+<!--		<figure>-->
+<!--			<img src="viz/viz6.svg" alt="" />-->
+<!--			<figcaption>-->
+<!--			-->
+<!--			</figcaption>-->
+<!--		</figure>-->
 
 		<figure>
 			<img src="viz/viz7.svg" alt="" />
 			<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This visualization aims to answer whether there are times during the year, where fatal overdoses are likely to occur.
+				What is very interesting is spike in cases from 2015 to 2017 shows up as a "hot streak" or darker band within this visualization.
+				Unfortunately, besides the trends we previously observed, there is no conclusive pattern indicating what time of the year is most likely to have
+				cases.
+			</figcaption>
+		</figure>
+		<figure>
+
+			<img src="viz/viz10.svg" alt="" />
+			<img src="viz/10noCol.svg" alt="" />
+			<figcaption>
+				One question that arose form exploring the distribution of the cases across different measures (demographic, years, etc)
+				was how many of these cases involved more than 1 drug. An interesting thing to observe is the fact that 2-3 drugs were involved
+				in a large amount of the cases. One thing to note is that the data does not give any information or context on the amount of each drug present.
+				Were they all above the lethal limit? Or did a combination of multiple non-lethal doses result in an accidental overdose? These are a couple of questions
+				that would require additional research.
 			</figcaption>
 		</figure>
 
 		<figure>
 			<img src="viz/viz8.svg" alt="" />
 			<figcaption>
-				ENTER IMAGE CAPTION HERE.
-			</figcaption>
-		</figure>
-
-		<figure>
-			<img src="viz/viz10.svg" alt="" />
-			<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This visualization is very similar to the one above, except we add another dimension of age to it. There are similar trends present to the ones we saw previously,
+				with the majority of the clustering happening in the age ranges 30-60.
+				One thing we can see in this graph that was not visible in the previous one, is that there is that there is a case which involved 10 distinct drugs.
 			</figcaption>
 		</figure>
 
 		<figure>
 			<img src="viz/viz11.svg" alt="" />
 			<figcaption>
-				.dfd.
+				This visualization uses the same data points as the one above however the encodings are different. For example, we have doubly encoded the overdose count with the y-axis
+				and the size of each point. The scale has also been moved to the x-axis. One thing to comment on about this visualization is that it feels overwhelming as there are a lot of different
+				components that need to be put together to make sense of what is being shown.
 			</figcaption>
 		</figure>
 
 		<figure>
 			<img src="viz/viz9.svg" alt="" />
 			<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This visualization directly answers the question: <em>What are the drugs with the highest recorded accidental drug overdoses?
+			</em> As seen, the top four drugs (Fentanyl, Cocaine, Heroin, Alcohol) largely dominate the number of  accidental fatal overdoses. When trying to pin down the cause of this health crisis
+				identifying the top drugs involved is very important.
 			</figcaption>
 		</figure>
 
 		<figure>
 			<img src="viz/viz12.svg" alt="" />
 			<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				This visualization tries to explore how drug classification relates to the rates of accidental fatal overdoses.
+				As we can see, three of the top four drugs we identified in the previous visualization are either Schedule I or Schedule II drugs. This means they
+				are drugs that have been <a style="color: blue" href="https://www.dea.gov/drug-information/drug-scheduling" target="_blank">identified to have high potential for abuse</a>.
+				It is still worth noting how many overdoses are related to alcohol even though it is an uncontrolled substance but regulated substance.
 			</figcaption>
 		</figure>
 
@@ -208,6 +232,11 @@
 			for i, 1 <= i <= 10. The majority of the entries had most of these fields empty, containing <em>null</em> values.
 			When initially trying to visualize the drugs with the most occurrences, the null become the dominating value.
 			As such on another iteration it was filtered out.
+		</p>
+
+		<p>
+			Finally, throughout this whole analysis I did a lot of exploration of ways to display the same selection of the dataset. Such using a different mark
+			or trying to use redundant encoding throughout. This is why a couple of the visualizations are paired with very similar images, as I was not always sure which one was the best.
 		</p>
 	</section>
 </main>
