@@ -13,6 +13,9 @@ body {
 .fit-picture {
     width: 250px;
 }
+.photo {
+    width: 1000px;
+}
 
 .nav-bar {
     /*display: inline-block;*/
@@ -23,7 +26,7 @@ body {
 .nav-bar  ol {
     list-style-type: none;
     padding-left: 0;
-    li{
+    li {
         display: contents;
     };
 }
