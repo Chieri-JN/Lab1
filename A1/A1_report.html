@@ -78,15 +78,6 @@
 					</li>
 				</ul>
 			</li>
-<!--			<li>-->
-<!--				<strong>What areas (zip addresses) have higher rates of accidental fatal drug overdoses?</strong>-->
-<!--				<ul>-->
-<!--					<li>-->
-<!--						In other words, are there drug overdose hotspots? If the answer is yes, what could be attributes-->
-<!--						of these "neighbourhoods" that impact the rate of accidental fatal drug overdoses?-->
-<!--					</li>-->
-<!--				</ul>-->
-<!--			</li>-->
 		</ol>
 	</section>
 
@@ -95,79 +86,129 @@
 		
 		<figure>
 			<img src="viz/viz1.svg" alt="" />
+			<img src="viz/viz0.svg" alt="" />
 			<figcaption>
-				ENTER IMAGE CAPTION HERE.
+				The first step in exploring the data set is to visualize is getting a sense of how the data is distributed.
+				This bar chart shows the distribution of the number of accidental fatal overdoses across different age groups.
+				As we can observe, the large majority of the entries lie between the ages 30 and 60. This distribution is
+				mostly unsurprising. The most interesting thing about the visualization is the spike on the lower end of the age range.
+				After filtering the data, we can see that there are spikes occurring from ages 0-2 and ages 12-16.
 			</figcaption>
+
 		</figure>
 
 		<figure>
 			<img src="viz/viz2.svg" alt="" />
+			<img src="viz/viz3.svg" alt="" />
+			<img src="viz/viz.svg" alt="" />
+			<figcaption>
+				In the first two visualizations shown above, we add another layer of detail to our data exploration, by splitting the numbers by sex.
+				Here we can see that across almost all age groups, males largely outnumber females in the number of accidental fatal overdoses.
+				The only exception is within the spike  from age 0-2 we observed before in the previous visualizations. This outlier is illustrated in the third bar chart.
+			</figcaption>
+		</figure>
+
+
+		<figure>
+			<img src="viz/viz13.svg" alt="" />
+			<img src="viz/race.svg" alt="" />
+			<figcaption>
+				In this visualization, we explore the distribution of overdose cases across each documented race and across each age group.
+				As we can observe white people are highly represented which aligns with the overall
+				<em><a style="color: blue" href="https://alleghenycontroller.com/data-dashboards/population-change-in-allegheny-county-2010-2020/" target="_blank"> distribution of races</a> </em>
+				within the county. The second highly represented racial group are black people, making up a decently size chunk of the pie chart.
+				The remaining races make up a much smaller combined percentage of the total cases.
+				It should be pointed out that the distributions of each age group fluctuates.
+			</figcaption>
+		</figure>
+
+		<figure>
+			<img src="viz/viz5.svg" alt="" />
+			<figcaption>
+				This along with the following visualizations explore the distribution of cases across the years and months.
+				This visualization shows the trend of cases from the earliest documented one in 2007 to the latest one in 2025.
+				An interesting thing to observe is the variations in the rate of change between each year. The rate steadily increases from 2007 to 2015 before
+				drastically spiking from 2015-2017.
+			</figcaption>
+		</figure>
+
+		<figure>
+			<img src="viz/viz4.svg" alt="" />
+			<figcaption>
+				In the visualization shown above, there are multiple things to take in . The first one
+			</figcaption>
+		</figure>
+
+		<figure>
+			<img src="viz/viz6.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
+			<img src="viz/viz7.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
+			<img src="viz/viz8.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
+			<img src="viz/viz10.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
+			<img src="viz/viz11.svg" alt="" />
+			<figcaption>
+				.dfd.
+			</figcaption>
+		</figure>
+
+		<figure>
+			<img src="viz/viz9.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
 		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
+			<img src="viz/viz12.svg" alt="" />
 			<figcaption>
 				ENTER IMAGE CAPTION HERE.
 			</figcaption>
 		</figure>
 
-		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
-			<figcaption>
-				ENTER IMAGE CAPTION HERE.
-			</figcaption>
-		</figure>
-
-		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
-			<figcaption>
-				ENTER IMAGE CAPTION HERE.
-			</figcaption>
-		</figure>
-
-		<figure>
-			<img src="IMAGE_FILENAME" alt="" />
-			<figcaption>
-				ENTER IMAGE CAPTION HERE.
-			</figcaption>
-		</figure>
 	</section>
 
 	<section>
 		<h2>Summary</h2>
 
-		<p>WRITE FINAL SUMMARY HERE.</p>
+		<p>
+			This analysis focuses on exploring possible trends in a dataset document accidental fatal drug overdoes  in the Allegheny County.
+			The initial visualizations focused on how the number of cases were spread across different demographics such as age, sex, and race.
+			The next focus was visualizing the number of cases across the years as well as exploring the evolution of the case numbers across
+			different age groups across the years. The following explorations focused on comparing the rate of drug combination across each age group
+			as well as how many of the cases involved specific combinations counts. Finally, the last set of visualizations explored the top  drugs across all cases
+			and across each drug classification.
+		</p>
+		<p>
+			After creating multiple visualizations, a couple of data quality issues become evident. The first one being
+			the possible <em>null</em> values in the Race field of the dataset. Another one that required data cleaning,
+			was how the drug combinations were tracked. The combinations are track through the <em>combined_od[i]</em> fields
+			for i, 1 <= i <= 10. The majority of the entries had most of these fields empty, containing <em>null</em> values.
+			When initially trying to visualize the drugs with the most occurrences, the null become the dominating value.
+			As such on another iteration it was filtered out.
+		</p>
 	</section>
 </main>
 </body>
