@@ -8,43 +8,45 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class = "nav-bar" >
-    <ul>
-        <a class="current" >
+    <nav class = "nav-bar" >
+        <ul>
             <li class="crumb">
                 <a href="../index.html">Home</a>
             </li>
-        </a>
-        <li class="crumb">
-            <a href="index.html"> Contact </a>
-        </li>
-        <li class="crumb">
-            <a href="../projects/index.html">Projects</a>
-        </li>
-        <li class="crumb">
-            <a href="https://github.com/Chieri-JN" target="_blank">GitHub</a>
-        </li>
-        <li class="crumb">
-            <a href="../photography/index.html">Photography</a>
-        </li>
-        <li class="crumb">
-            <a href="https://drive.google.com/file/d/1GXt8NmCjheccrPx1D7HaUZamUhs0K3zx/view?usp=sharing"  target="_blank">Resume</a>
-        </li>
-    </ul>
-</nav>
+                <li class="crumb">
+                    <a class="current" href="index.html"> Contact </a>
+                </li>
+            <li class="crumb">
+                <a href="../projects/index.html">Projects</a>
+            </li>
+            <li class="crumb">
+                <a href="https://github.com/Chieri-JN" target="_blank">GitHub</a>
+            </li>
+            <li class="crumb">
+                <a href="../photography/index.html">Photography</a>
+            </li>
+            <li class="crumb">
+                <a href="https://drive.google.com/file/d/1GXt8NmCjheccrPx1D7HaUZamUhs0K3zx/view?usp=sharing"  target="_blank">Resume</a>
+            </li>
+        </ul>
+    </nav>
 
-    <form action = "mailto:cnnadozi@andrew.cmu.edu" method="POST" enctype="text/plain">
-        <label for="email">Email</label>
+    <h1>Contact Me</h1>
+    <form class = "contactForm" action = "mailto:cnnadozi@andrew.cmu.edu" method="POST" enctype="text/plain">
+        <label for="email">Email
             <input name="email" type="email" id="email">
+        </label>
 
-        <label for="subject">Subject</label>
+        <label for="subject">Subject
             <input name="subject" type="text" id="subject">
+        </label>
 
-        <label for="body">Body</label>
+        <label for="body">Body
             <textarea name="body" id="body"></textarea>
+        </label>
 
         <button> Submit</button>
     </form>
-    
+    <script type="module" src="../global.js"></script>
 </body>
 </html>
